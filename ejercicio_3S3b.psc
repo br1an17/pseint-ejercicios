@@ -12,16 +12,34 @@
 //1 centímetro equivale a 10 milímetros,1 pulgada equivale a 25.4 milímetros
 
 
-Algoritmo sin_titulo
-	Definir cantidad, ya, pies, cen ,pulg Como Real
+Algoritmo ejercicio_3S3b 
+	Definir cantidad, ya, pies, cen ,pulg, convercion Como Real
 	Definir unidad Como Caracter
 	
+	pies <- 304.8
+	ya <- 914.4
+	cen <- 10
+	pulg <- 25.4
 	
 	Escribir "ingrese cantidad"
 	leer cantidad
-	Escribir "ingrese unidad"
+	Escribir "ingrese unidad Yarda(Y), Pies(Pi), Centímetros(C) o Pulgadas(Pu)."
+	leer unidad 
+	
+	Segun unidad Hacer
+		"Pu":
+			convercion <- cantidad * 25.4
+		"C":
+			convercion <- cantidad * 10
+		"Pi":
+			convercion <- cantidad * 304.8
+		"Y":
+			convercion <- cantidad * 914.4
+		De Otro Modo:
+		 escribir	"ingrese unidad corrrespondiente"
+	FinSegun
 	
 	
-	
+	escribir "el resultado de la comvercion a centimetros es" , convercion
 	
 FinAlgoritmo
