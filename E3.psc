@@ -17,25 +17,26 @@
 Algoritmo E3
 	
 	
-	Definir paquetes Como real
+	Definir paquetes , precioPaquete Como real
 	definir i como entero
-	Dimensionar paquetes[5]
+	Dimensionar paquetes[20]
+	dimensionar precioPaquete[20]
 	
 	
-	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
 		Escribir "Ingrese los kilos del paquete numero: ",i +1
 		leer paquetes[i]
 	FinPara
 	
 	
-	Para i <- 0 Hasta 4 Con Paso 1 Hacer
+	Para i <- 0 Hasta 19 Con Paso 1 Hacer
 		si paquetes[i] < 2 entonces
-			paquetes[i] <- 500.50 * paquetes[i]
+			precioPaquete[i] <- 500.50 * paquetes[i]
 		SiNo
-			paquetes[i] <- 400 * paquetes[i]
+			precioPaquete[i] <- 400 * paquetes[i]
 			
 		finsi
-		escribir "el paquete numero ", i + 1, " vale ", paquetes[i]
+		escribir "el paquete numero ", i + 1, " vale ", precioPaquete[i]
 	FinPara
 	
 	

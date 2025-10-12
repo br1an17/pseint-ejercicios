@@ -24,5 +24,5 @@ Algoritmo E1
 		FinSi
 	FinPara
 	
-	escribir maximo
+	escribir "el numero maximo es " ,maximo
 FinAlgoritmo
